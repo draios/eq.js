@@ -86,7 +86,7 @@ module.exports = function (gulp, distPaths, outPath) {
 
     return gulp.src(distPaths)
       .pipe(sourcemap.init())
-      .pipe(insert.prepend('/*! eq.js v' + tag + ' (c) ' + year + ' Sam Richard, MIT license */\n'))
+      .pipe(insert.prepend('/*! eq.js v' + tag + ' (c) ' + year + ' Sam Richard & Contributors, MIT license */\n'))
       .pipe(rename({
         extname: '.min.js'
       }))
